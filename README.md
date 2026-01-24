@@ -17,7 +17,7 @@
 
 StormDrop is an efficient PRNG algorithm for graphics rendering.
 
-It's intended to replace non-cryptographic PRNGs for simple visual effects generation with indifference to mathematical biases when the requirements are 32-bit output integers, avoidance of alternating even-odd patterns, the [fastest speed](README.md?tab=readme-ov-file#speed) and [decent empirical test results](README.md?tab=readme-ov-file#empirical-test-results) with MBs of output.
+It's intended to replace non-cryptographic PRNGs for simple visual effects generation with indifference to mathematical biases when the requirements are 32-bit output integers, avoidance of alternating even-odd patterns, the [fastest speed](README.md?tab=readme-ov-file#speed) and [decent empirical test results](README.md?tab=readme-ov-file#empirical-test-results).
 
 Furthermore, it has a [2⁶⁴ minimum period](README.md?tab=readme-ov-file#period), [parallelism](README.md?tab=readme-ov-file#parallelism), reversibility, [simple implementation](README.md?tab=readme-ov-file#reference) and no vendor-specific SIMD.
 
@@ -67,7 +67,7 @@ Each state variable (`a` and `b`) in a `StormDrop` instance should be seeded wit
 
 ## Empirical Test Results
 
-StormDrop passed PractRand 0.96 `stdin32` with MBs of output.
+StormDrop passed up to 32MB in PractRand 0.96 `stdin32`.
 
 Furthermore, it passed TestU01 1.2.3 SmallCrush.
 
