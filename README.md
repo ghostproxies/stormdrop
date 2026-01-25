@@ -43,7 +43,7 @@ A 2⁶⁴ minimum period in each sequence is proven by the mixed-in 2⁶⁴ equi
 
 Each instance within a set of parallel StormDrop instances must seed `a` with a number that's unique among the set of parallel instances and must seed `b` with a number that's consistent among the set of parallel instances.
 
-StormDrop guarantees up to 2⁶⁴ parallel instances that each output at least 2⁶⁴ results without state overlap among the set of parallel instances.
+As proven by [ZoneSplit](https://github.com/ghostproxies/zonesplit), StormDrop guarantees up to 2⁶⁴ parallel instances that each output at least 2⁶⁴ results without state overlap among the set of parallel instances.
 
 ## Reference
 
