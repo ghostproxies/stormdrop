@@ -9,6 +9,7 @@
 - [License](README.md?tab=readme-ov-file#license)
 - [Period](README.md?tab=readme-ov-file#period)
 - [Parallelism](README.md?tab=readme-ov-file#parallelism)
+- [Jumps](README.md?tab=readme-ov-file#jumps)
 - [Reference](README.md?tab=readme-ov-file#reference)
 - [Empirical Test Results](README.md?tab=readme-ov-file#empirical-test-results)
 - [Speed](README.md?tab=readme-ov-file#speed)
@@ -44,6 +45,12 @@ A 2⁶⁴ minimum period in each sequence is proven by the mixed-in 2⁶⁴ equi
 Each instance within a set of parallel StormDrop instances must seed `a` with a number that's unique among the set of parallel instances and must seed `b` with a number that's consistent among the set of parallel instances.
 
 As proven by [ZoneSplit](https://github.com/ghostproxies/zonesplit), StormDrop guarantees up to 2⁶⁴ parallel instances that each avoid collisions with other seeded states among the set of parallel instances for at least 2⁶⁴ output results.
+
+## Jumps
+
+StormDrop uses efficient [seed conditions](README.md?tab=readme-ov-file#parallelism) to prevent parallel seeded state collisions instead of using jump functions.
+
+Furthermore, the remaining practical use cases of jump functions are either redundant or require full sequence reproducibility.
 
 ## Reference
 
