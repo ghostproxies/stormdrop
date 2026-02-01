@@ -16,7 +16,7 @@
 
 ## Introduction
 
-StormDrop is an efficient PRNG algorithm for graphics rendering.
+StormDrop is the efficient PRNG algorithm for graphics rendering.
 
 It's intended to replace non-cryptographic PRNGs for simple visual effects generation with indifference to mathematical biases when the requirements are 32-bit output integers, avoidance of alternating even-odd patterns, the [fastest speed](README.md?tab=readme-ov-file#speed) and [decent empirical test results](README.md?tab=readme-ov-file#empirical-test-results).
 
